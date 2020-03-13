@@ -1,0 +1,167 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PrototypeController!{% endblock %}
+
+{% block body %}
+  <!--  ********** CTA SECTION ********** -->
+  <div id="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 centered">
+          <p>PENTESTE MOINS CHERE</p>
+        </div>
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/CTA -->
+
+  <!--  ********** GREEN SECTION ********** -->
+  <div id="g">
+    <div class="container">
+      <div class="row mt">
+        <div class="col-md-6 centered">
+          <img src="{{asset('image/kali.png')}}" class="img-responsive aligncenter" width="320" alt="" data-effect="slide-left">
+        </div>
+        <!--/col-md-6 -->
+
+        <div class="col-md-4">
+          <h1 data-effect="slide-right">1</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <!--/col-md-4 -->
+
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/G -->
+
+  <!--  ********** CTA SECTION ********** -->
+  <div id="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 centered">
+          <p>DE L'EXPERIANCES POUR LES ETUDIANTS</p>
+        </div>
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/CTA -->
+
+  <!--  ********** RED SECTION ********** -->
+  <div id="r">
+    <div class="container">
+      <div class="row mt">
+        <div class="col-md-4 col-md-offset-2">
+          <h1 data-effect="slide-left">2</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <!--/col-md-4 -->
+        <div class="col-md-6 centered">
+          <img src="{{asset('image/img2.png')}}" class="img-responsive aligncenter" width="320" alt="" data-effect="slide-right">
+        </div>
+        <!--/col-md-6 -->
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/R -->
+
+  <!--  ********** CTA SECTION ********** -->
+  <div id="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 centered">
+          <p>ECHANGE ENTREPRISE/ETUDIANTS</p>
+        </div>
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/CTA -->
+
+  <!--  ********** BLUE SECTION ********** -->
+  <div id="b">
+    <div class="container">
+      <div class="row mt">
+        <div class="col-md-6 centered">
+          <img src="{{asset('image/img3.png')}}" class="img-responsive aligncenter" width="320" alt="" data-effect="slide-left">
+        </div>
+        <!--/col-md-6 -->
+
+        <div class="col-md-4">
+          <h1 data-effect="slide-right">3</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <!--/col-md-4 -->
+
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/B -->
+
+  <!--  ********** CTA SECTION ********** -->
+  <div id="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 centered">
+          <p>CONTACTE NOUS</p>
+        </div>
+      </div>
+      <!--/row -->
+    </div>
+    <!--/container -->
+  </div>
+  <!--/CTA -->
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="centered">Contact Form</h2>
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / contact -->
+{% endblock %}
